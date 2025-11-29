@@ -1,0 +1,123 @@
+:root{
+  --pink:#f3a9b6;
+  --muted:#7a7a7a;
+  --soft-yellow:#fff3b0;
+  --bg:#fff;
+  --card:#fff6f6;
+  --accent:#ff8aa2;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:#faf9f9;
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+}
+
+.site-wrap{
+  max-width:1100px;
+  margin:32px auto;
+  background: white;
+  padding:28px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.02);
+}
+
+/* NAV */
+.bg-pink{ background: var(--pink) !important; }
+.navbar .nav-link{ color:#fff !important; opacity:0.9 }
+.navbar-brand{ color:#fff !important; font-weight:600; }
+
+/* ABOUT HERO */
+.about-hero{ background: #fff6d9; border-radius:8px; }
+.profile-circle img{ width:120px; height:120px; object-fit:cover; }
+
+/* SKILLS / PILL */
+.skill-pill{
+  display:inline-block;
+  background:#fff0f2;
+  padding:6px 10px;
+  border-radius:16px;
+  font-size:0.85rem;
+  color:#333;
+}
+
+/* project tile small */
+.project-tile{ text-decoration:none; color:inherit; }
+.project-image{
+  width:100%;
+  aspect-ratio: 1 / 1;   /* SQUARE */
+  background-size:cover;
+  background-position:center;
+  border-radius:6px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+/* project image large on works page */
+.project-image-lg{
+  width:100%;
+  aspect-ratio: 1280 / 690;
+  background-size:cover;
+  background-position:center;
+  border-radius:6px;
+}
+
+/* project hero on single page */
+.project-image-hero{
+  width:100%;
+  aspect-ratio: 1280 / 690;
+  background-size:cover;
+  background-position:center;
+  border-radius:8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+/* small squares used in project pages */
+.img-box{
+  width:100%;
+  height:150px;
+  background-size:cover;
+  background-position:center;
+  border-radius:8px;
+}
+
+/* contact form */
+.form-card{ background: #fff6f6; border-radius:8px; }
+.btn-submit{
+  background: var(--soft-yellow);
+  border: none;
+  color:#111;
+  padding:10px 16px;
+  border-radius:6px;
+  font-weight:600;
+}
+
+/* footer */
+.footer{ background:transparent; color:var(--muted); }
+
+/* responsiveness adjustments */
+@media (max-width:767px){
+  .site-wrap{ margin:12px auto; padding:18px; }
+  .profile-circle img{ width:88px; height:88px; }
+  .project-image, .project-image-lg, .project-image-hero{ aspect-ratio: 16/9; }
+  .img-box{ height:120px }
+}
+.about-box {
+  background: #FFF6D9;
+  border-radius: 20px;
+
+}
+
+.about-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-image: url('../assets/images/Profile.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+
+
+

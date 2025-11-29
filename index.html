@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bootstrap Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --soft-pink: #f3a9b6;
+      --muted: #7b7b7b;
+      --soft-yellow: #fff3b0;
+      --light-bg: #faf9f9;
+      --card-bg: #fff6f6;
+      --accent: #ff8aa2;
+      --maxW: 1100px;
+    }
+
+    body{
+      font-family: "Montserrat", sans-serif;
+      background: var(--light-bg);
+      color: #111;
+      margin:0;
+    }
+
+    .site-wrap{
+      max-width: var(--maxW);
+      margin: 28px auto;
+      background: #fff;
+      padding: 36px 44px;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.03);
+    }
+
+    /* Navbar */
+    .topbar{
+      background: var(--soft-pink);
+      color:#fff;
+      padding:10px 0;
+    }
+    .nav-link{ color:#fff; opacity:0.95; }
+    .nav-link:hover{ opacity:1; text-decoration:underline; }
+    .navbar-brand{ color:white; font-weight:600; }
+
+    /* Cover */
+    .hero{
+      text-align:center;
+      padding:40px 0 24px;
+    }
+
+    .hero-circle{
+      width:300px;
+      height:300px;
+      margin:0 auto;
+      border-radius:50%;
+      background-image: url('../assets/images/Logo.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.04);
+    }
+
+    .hero-overlay{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      text-align:center;
+      color:white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .hero-overlay h1{
+      font-family: "Playfair Display", serif;
+      font-size:40px;
+      font-weight:400;
+      margin:0;
+    }
+
+    .subtitle{
+      font-style:italic;
+      opacity:0.9;
+      font-size:14px;
+      margin-top:6px;
+    }
+
+    hr.soft{
+      border:none;
+      border-top:1px solid #eee;
+      margin:28px 0;
+    }
+
+    /* social */
+    .social-row{
+      display:flex;
+      justify-content:center;
+      gap:28px;
+    }
+    .social-row a{
+      width:44px;
+      height:44px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:white;
+      border-radius:8px;
+      border:1px solid rgba(0,0,0,0.06);
+      color:black;
+      text-decoration:none;
+      font-size:18px;
+    }
+
+    /* LATEST WORK */
+    .projects .project-tile{
+      text-decoration:none;
+      color:inherit;
+      display:block;
+    }
+
+    .project-image{
+      width:100%;
+      aspect-ratio:1/1; 
+      background-size:cover;
+      background-position:center;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.03);
+    }
+
+    .project-meta{
+      margin-top:12px;
+      font-weight:700;
+      font-size:1.05rem;
+    }
+    .project-sub{
+      font-size:0.9rem;
+      color:var(--muted);
+      margin-top:4px;
+    }
+
+    /* Contact */
+    .contact-area{
+      display:flex;
+      gap:28px;
+      margin-top:32px;
+    }
+    .contact-card{
+      width:360px;
+      background:var(--card-bg);
+      padding:18px;
+      border-radius:8px;
+    }
+    .submit-btn{
+      background:var(--soft-yellow);
+      border:none;
+      padding:10px 16px;
+      border-radius:6px;
+      font-weight:600;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="index.html">Urja Sethia</a>
+      <div>
+        <a class="nav-link d-inline-block me-3" href="about.html">About</a>
+        <a class="nav-link d-inline-block me-3" href="works.html">Work</a>
+        <a class="nav-link d-inline-block" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="site-wrap">
+
+    <!-- COVER -->
+    <header class="hero">
+      <div class="hero-circle">
+        <div class="hero-overlay">
+          <h1>Portfolio</h1>
+          <div class="subtitle">Urja Sethia</div>
+        </div>
+      </div>
+    </header>
+
+    <hr class="soft">
+
+    <!-- SOCIAL -->
+ <div id="contact" class="social-row">
+    <a href="https://www.instagram.com/urja_sethia" target="_blank"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/urja-sethia-234422318" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.behance.net/urja_sethia" target="_blank"><i class="bi bi-behance"></i></a>
+    <a href="mailto:urjasethia10@gmail.com"><i class="bi bi-envelope"></i></a>
+</div>
+
+
+    <hr class="soft">
+
+    <!-- LATEST WORK -->
+    <section class="projects mt-4">
+      <h5 class="text-center mb-4 fw-bold">My latest work</h5>
+
+      <div class="row g-4">
+
+        <div class="col-6 col-md-4">
+          <a class="project-tile" href="project-01.html">
+            <div class="project-image" style="background-image:url('../assets/images/Jamie.png');"></div>
+            <div class="project-meta">Children's Book</div>
+            <div class="project-sub">Jamie's Adventures</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <a class="project-tile" href="project-02.html">
+            <div class="project-image" style="background-image:url('../assets/images/Typography.png');"></div>
+            <div class="project-meta">Typography Poster</div>
+            <div class="project-sub">Visual Narratives</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <a class="project-tile" href="project-03.html">
+            <div class="project-image" style="background-image:url('../assets/images/Lost.png');"></div>
+            <div class="project-meta">Promotional Play Poster</div>
+            <div class="project-sub">The Lost Decade</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <a class="project-tile" href="project-04.html">
+            <div class="project-image" style="background-image:url('../assets/images/Vicious.png');"></div>
+            <div class="project-meta">Card Game Design</div>
+            <div class="project-sub">Vicious Vendetta</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <a class="project-tile" href="project-05.html">
+            <div class="project-image" style="background-image:url('../assets/images/Rococo.png');"></div>
+            <div class="project-meta">Rococo Inspired Tea Company</div>
+            <div class="project-sub">Ceylon Tea</div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <a class="project-tile" href="project-06.html">
+            <div class="project-image" style="background-image:url('../assets/images/Clarthware.png');"></div>
+            <div class="project-meta">Internship</div>
+            <div class="project-sub">Clarthware</div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="soft">
+
+    <!-- CONTACT -->
+    <section class="contact-area">
+      <div class="contact-left">
+        <h5 style="color:#f099a8;" class="fw-bold">Let's create together</h5>
+        <p class="text-muted">A dreamer, visual artist, and a vivid storyteller. I thrive in dynamic environments that allow me to create with intention.
+          <br>If any of this resonated with you, let’s keep the conversation going 
+          <br>Collaborate with me to shape something meaningful. </p>
+        <p class="small text-muted">Get in touch: <a href="mailto:urjasethia10@gmail.com">urjasethia10@gmail.com</a></p>
+      </div>
+
+      <div class="contact-card">
+        <form>
+          <input class="form-control mb-2" placeholder="Name" required>
+          <input class="form-control mb-2" placeholder="Email" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="Type your message here" required></textarea>
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+</body>
+</html>
+
