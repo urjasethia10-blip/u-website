@@ -112,7 +112,7 @@ body{
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-image: url('../assets/images/Profile.png');
+  background-image: url('assets/images/Profile.png');
   background-size: cover;
   background-position: center;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
